@@ -5,6 +5,38 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@1.*/da
     API.setName('mgr');
     API.addSettings('skip',true);
 	init_data_pipe(API, 'f0ZJQg2FYO7i',  {file_type:'csv'});	
+
+    API.addGlobal({
+        raceiat:{},
+        //YBYB: change when copying back to the correct folder
+        baseURL: './images/',
+        raceSet:raceSet,
+        blackLabels:blackLabels,
+        whiteLabels:whiteLabels,
+        //Select randomly what attribute words to see. 
+        //Based on Axt, Feng, & Bar-Anan (2021).
+        posWords : API.shuffle([
+            'Love', 'Cheer', 'Friend', 'Pleasure',
+            'Adore', 'Cheerful', 'Friendship', 'Joyful', 
+            'Smiling','Cherish', 'Excellent', 'Glad', 
+            'Joyous', 'Spectacular', 'Appealing', 'Delight', 
+            'Excitement', 'Laughing', 'Attractive','Delightful', 
+            'Fabulous', 'Glorious', 'Pleasing', 'Beautiful', 
+            'Fantastic', 'Happy', 'Lovely', 'Terrific', 
+            'Celebrate', 'Enjoy', 'Magnificent', 'Triumph'
+        ]), 
+        negWords : API.shuffle([
+            'Abuse', 'Grief', 'Poison', 'Sadness', 
+            'Pain', 'Despise', 'Failure', 'Nasty', 
+            'Angry', 'Detest', 'Horrible', 'Negative', 
+            'Ugly', 'Dirty', 'Gross', 'Evil', 
+            'Rotten','Annoy', 'Disaster', 'Horrific',  
+            'Scorn', 'Awful', 'Disgust', 'Hate', 
+            'Humiliate', 'Selfish', 'Tragic', 'Bothersome', 
+            'Hatred', 'Hurtful', 'Sickening', 'Yucky'
+        ])
+    });
+	
     API.addTasksSet({
         instructions: [{
             type: 'message',
