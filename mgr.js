@@ -32,45 +32,10 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@1.*/da
 	                mixer:'multiBranch', 
 	                branches :
 	                [
-	                    { 
-	                        conditions:[{compare: 'global.choose.questions.choice.response', to: 'age'}],
-	                        data:[{inherit:'age'}]
-	                    },
-	                    { 
-	                        conditions:[{compare: 'global.choose.questions.choice.response', to: 'arab'}],
-	                        data:[{inherit:'arab'}]
-	                    },
-	                    { 
-	                        conditions:[{compare: 'global.choose.questions.choice.response', to: 'asian'}],
-	                        data:[{inherit:'asian'}]
-	                    },
-	                    { 
-	                        conditions:[{compare: 'global.choose.questions.choice.response', to: 'disability'}],
-	                        data:[{inherit:'disability'}]
-	                    },
-	                    { 
-	                        conditions:[{compare: 'global.choose.questions.choice.response', to: 'genderscience'}],
-	                        data:[{inherit:'genderscience'}]
-	                    },
-	                    { 
-	                        conditions:[{compare: 'global.choose.questions.choice.response', to: 'native'}],
-	                        data:[{inherit:'nativee'}]
-	                    },
+
 	                    { 
 	                        conditions:[{compare: 'global.choose.questions.choice.response', to: 'race'}],
 	                        data:[{inherit:'race'}]
-	                    },
-	                    { 
-	                        conditions:[{compare: 'global.choose.questions.choice.response', to: 'sexuality'}],
-	                        data:[{inherit:'sexuality'}]
-	                    },
-	                    { 
-	                        conditions:[{compare: 'global.choose.questions.choice.response', to: 'hispanic'}],
-	                        data:[{inherit:'hispanic'}]
-	                    },
-	                    { 
-	                        conditions:[{compare: 'global.choose.questions.choice.response', to: 'weight'}],
-	                        data:[{inherit:'weight'}]
 	                    }
 	                ]
 	            }
