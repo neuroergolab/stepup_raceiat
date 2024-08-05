@@ -28,16 +28,7 @@ define(['questAPI'], function(Quest){
                         stem:'Please choose a task to experience', 
                         name:'choice',
                         answers : [
-				{text:'Black/White Evaluative', value:'race'},
-				{text:'Age', value:'age'},
-				{text:'Disability', value:'disability'},
-                            {text:'Native Americans', value:'native'},
-                            {text:'Hispanic', value:'hispanic'},
-                            {text:'Gender science', value:'genderscience'},
-                            {text:'Asian Americans', value:'asian'},
-                            {text:'Arab Americans', value:'arab'},
-                            {text:'Sexuality', value:'sexuality'},
-                            {text:'Weight', value:'weight'}
+				{text:'Black/White Evaluative', value:'race'}
                         ]
                     }
                 ]
