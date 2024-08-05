@@ -78,7 +78,7 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@1.*/da
             scriptUrl: 'explicits.js'
         }],
 
-        raceiat: [{
+        race: [{
             type: 'time',
             name: 'race',
             scriptUrl: 'race.js'
@@ -150,7 +150,7 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@1.*/da
                     mixer: 'wrapper',
                     data: [
                         {inherit: 'raceiat_instructions'},
-                        {inherit: 'raceiat'}
+                        {inherit: 'race'}
                     ]
                 }
             ]
