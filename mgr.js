@@ -14,51 +14,6 @@ define(['managerAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-datapipe@1.*/da
             scriptUrl: 'choose.js'
         }],
 
-        age: [{
-            type: 'time',
-            name: 'age',
-            scriptUrl: 'age.js'
-        }],
-        arab: [{
-            type: 'time',
-            name: 'arab',
-            scriptUrl: 'arab.js'
-        }],
-        asian: [{
-            type: 'time',
-            name: 'asian',
-            scriptUrl: 'asian.js'
-        }],
-        disability: [{
-            type: 'time',
-            name: 'disability',
-            scriptUrl: 'disability.js'
-        }],
-        nativee: [{
-            type: 'time',
-            name: 'nativee',
-            scriptUrl: 'native.js'
-        }],
-        genderscience: [{
-            type: 'time',
-            name: 'genderscience',
-            scriptUrl: 'genderscience.js'
-        }],
-        sexuality: [{
-            type: 'time',
-            name: 'sexuality',
-            scriptUrl: 'sexuality.js'
-        }],
-        weight: [{
-            type: 'time',
-            name: 'weight',
-            scriptUrl: 'weight.js'
-        }],
-	hispanic: [{
-            type: 'time',
-            name: 'hispanic',
-            scriptUrl: 'hispanic.js'
-        }],
         race: [{
             type: 'time',
             name: 'race',
